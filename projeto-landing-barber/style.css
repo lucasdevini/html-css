@@ -99,14 +99,14 @@ main {
     font-variant: small-caps;
 }
 
-#container-servicos {
+#container-servicos, #container-produtos {
     display: flex;
     flex-direction: column;
     margin: 20px 40px;
     width: 100%;
 }
 
-.servicos {
+.servicos, .produtos {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -119,10 +119,13 @@ main {
     align-self: center;
 }
 
-.titulo-servico {
+.titulo-servico, .titulo-produto {
     display: flex;
     align-items: center;
     width: 100%;
+}
+
+.titulo-servico {
     background-image: linear-gradient(to right,
     goldenrod, #A67E19, #59440D, black 100%);
 }
@@ -131,7 +134,7 @@ main {
     align-self: flex-end;
 }
 
-.titulo-servico h4 {
+.titulo-servico h4, .titulo-produto h4 {
     height: 30px;
     font-size: 15px;
     margin: 0px 10px;
@@ -172,12 +175,12 @@ main {
     border-radius: 4px;
 } 
 
-.container-imagem-corte img {
+.container-imagem-corte img, .container-imagem-pomada img {
     width: 100%;
     height: 300px;
 }
 
-.container-corte {
+.container-corte, .container-pomada {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,8 +196,21 @@ main {
     color: goldenrod;
 }
 
-.container-corte .preco-corte {
+.container-corte .preco-corte, .preco-pomada {
     font-size: 25px;
+}
+
+.titulo-produto {
+    background-image: linear-gradient(to right, #FF0000, #CC0000, #800000, black);
+}
+
+#ul-produtos li {
+    border: 1px solid red;
+}
+
+.nome-pomada {
+    font-size: 18px;
+    color: red;
 }
 
 @media (max-width: 636px) {
