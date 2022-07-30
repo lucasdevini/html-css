@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector("#menu-mobile").addEventListener("click", function(){
+                if(document.querySelector("nav ul").style.display == 'flex') {
+                    document.querySelector("nav ul").style.display = 'none';
+                } else {
+                    document.querySelector("nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>    
+        <div id="nav-bar">
+            <div id="menu">
+                <div id="logo">
+                    <img src="" alt="LOGO">
+                </div>
+
+                <div id="menu-mobile">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                </div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>Início</li>
+                    <li>Serviços</li>
+                    <li>Nosso espaço</li>
+                    <li>Produtos</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="presentation-text">
+            <h2>Venha dar um tapa no visual</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, expedita.
+            </p>
+
+            <div id="barber">
+                Com Felipe Siqueira
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-sections" id="sec-servicos">
+            <h3>
+                Nossos Serviços:
+            </h3>
+
+            <div id="container-servicos">
+                <div class="servicos">
+                    <div class="titulo-servico">
+                        <div class="icon">
+                            <img src="imagens/tesoura.png" alt="">
+                        </div>
+
+                        <div class="titulo">
+                            <h4>
+                                Corte de cabelo
+                            </h4>
+                            <div id="barra-titulo-tesoura"></div>
+                        </div>
+                    </div>
+
+                    <div class="precos">
+                        <ul>
+                            <li>
+                                <div class="container-imagem-corte">
+                                    <img src="imagens/degrade.jpg" alt="">
+                                </div>
+                                <div class="container-corte">
+                                    <span class="nome-corte">Degradê</span>  <span class="preco-corte">R$ 15,00</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="container-imagem-corte">
+                                    <img src="imagens/degrade-navalhado.jpg" alt="">
+                                </div>
+                                <div class="container-corte">
+                                    <span class="nome-corte">Degradê navalhado</span>  <span class="preco-corte">R$ 20,00</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="container-imagem-corte">
+                                    <img src="imagens/zeca-urubu.jpg" alt="">
+                                </div>
+                                <div class="container-corte">
+                                    <span class="nome-corte">Zeca Urubu</span>  <span class="preco-corte">R$ 50,00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="servicos">
+                    <div class="titulo-servico">
+                        <div class="icon">
+                            <img src="imagens/barba.png" alt="">
+                        </div>
+
+                        <div class="titulo">
+                            <h4>
+                                Barba
+                            </h4>
+                            <div id="barra-titulo-barba"></div>
+                        </div>
+                    </div>
+
+                    <div class="precos">
+                        <ul>
+                            <li>
+                                <div class="container-imagem-corte">
+                                    <img src="imagens/bigode.png" alt="">
+                                </div>
+                                <div class="container-corte">
+                                    <span class="nome-corte">Bigode</span>  <span class="preco-corte">R$ 15,00</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="container-imagem-corte">
+                                    <img src="imagens/cavanhauqe.jpg" alt="">
+                                </div>
+                                <div class="container-corte">
+                                    <span class="nome-corte">Cavanhaque</span>  <span class="preco-corte">R$ 20,00</span>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="container-imagem-corte">
+                                    <img src="imagens/barba.png" alt="">
+                                </div>
+                                <div class="container-corte">
+                                    <span class="nome-corte">Barba completa</span>  <span class="preco-corte">R$ 50,00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="servicos" id="servico-sobrancelha">
+                    <div class="titulo-servico">
+                        <div class="icon">
+                            <img src="imagens/sobrancelha.png" alt="">
+                        </div>
+
+                        <div class="titulo">
+                            <h4>
+                                Sobrancelha
+                            </h4>
+                            <div id="barra-titulo-sobrancelha"></div>
+                        </div>
+                    </div>
+
+                    <div class="precos">
+                        <ul>
+                            <li>
+                                <div class="container-imagem-corte">
+                                    <img src="imagens/sobran.jpg" alt="">
+                                </div>
+                                <div class="container-corte">
+                                      <span class="preco-corte">R$ 5,00</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-sections" id="sec-produtos">
+            <h3>Nossos Produtos</h3>
+        </section>
+
+        <section class="main-sections">
+            <h3>Nosso Espaço</h3>
+        </section>
+    </main>
+
+    <footer>
+    
+    </footer>
+</body>
+</html>

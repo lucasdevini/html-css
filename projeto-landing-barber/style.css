@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Readex Pro', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    background: black url('imagens/barber-background.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header #nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+header #presentation-text {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 200px 0px;
+    margin: 0px 30px;
+}
+
+#presentation-text h2 {
+    font-size: 40px;
+}
+
+#presentation-text p {
+    margin: 10px 0px;
+}
+
+#barber {
+    align-self: flex-end;
+    font-style: italic;
+    color: gold;
+}
+
+#menu-mobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-mobile .menu-bar {
+    height: 3px;
+    margin: 5px 0px;
+    background-color: gold;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 0px 15px;
+    color: gold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px;
+    width: 100%;    
+}
+
+.main-sections h3 {
+    font-size: 25px;
+    font-variant: small-caps;
+}
+
+#container-servicos {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 40px;
+    width: 100%;
+}
+
+.servicos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    border-radius: 3px;
+}
+
+#servico-sobrancelha {
+    width: 100%;
+    align-self: center;
+}
+
+.titulo-servico {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to right,
+    goldenrod, #A67E19, #59440D, black 100%);
+}
+
+.titulo {
+    align-self: flex-end;
+}
+
+.titulo-servico h4 {
+    height: 30px;
+    font-size: 15px;
+    margin: 0px 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+}
+
+.titulo {
+    display: block;
+}
+
+.precos {
+    margin: 10px;
+}
+
+.precos ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    list-style-type: none;
+}
+
+.precos ul li {
+    flex: 1;
+    min-width: 260px;
+    max-width: 350px;
+    margin: 10px 10px;
+    color: white;
+    border: 1px solid goldenrod;
+    border-radius: 4px;
+} 
+
+.container-imagem-corte img {
+    width: 100%;
+    height: 300px;
+}
+
+.container-corte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.container-corte span {
+    margin: 0px 10px;
+}
+
+.container-corte .nome-corte {
+    font-size: 18px;
+    color: goldenrod;
+}
+
+.container-corte .preco-corte {
+    font-size: 25px;
+}
+
+@media (max-width: 636px) {
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #menu {
+        width: 100%;
+    }
+    
+    #menu-mobile {
+        display: flex;
+    }
+
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    header nav ul li {
+        margin: 5px 5px;
+        padding: 5px;
+    }
+
+    header nav ul li:hover {
+        background-color: white;
+    }
+}
+
+
+
+
+
