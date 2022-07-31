@@ -90,8 +90,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0px;
-    width: 100%;    
+    margin: 20px 0px; 
+    width: 100%;
 }
 
 .main-sections h3 {
@@ -213,6 +213,39 @@ main {
     color: red;
 }
 
+#container-comidas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.comidas-bebidas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid orange;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.comidas-bebidas h4 {
+    width: 100%;
+    padding: 5px;
+    background-image: linear-gradient(to right, #FFA500, #FF6B0D, #E8810C, black);
+}
+
+.comidas-bebidas ul {
+    list-style-type: none;
+}
+
+.comidas-bebidas ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    border-bottom: 1px solid orange;
+}
+
 @media (max-width: 636px) {
     #nav-bar {
         display: flex;
@@ -239,10 +272,27 @@ main {
     header nav ul li {
         margin: 5px 5px;
         padding: 5px;
+        border-bottom: 1px solid gold;
     }
 
-    header nav ul li:hover {
+    header nav ul #menu-inicio:hover {
         background-color: white;
+    }
+
+    header nav ul #menu-servicos:hover {
+        background-color: goldenrod;
+    }
+
+    header nav ul #menu-espaco:hover {
+        background-color: blue;
+    }
+
+    header nav ul #menu-produtos:hover {
+        background-color: red;
+    }
+
+    #container-comidas {
+        flex-direction: column;
     }
 }
 
