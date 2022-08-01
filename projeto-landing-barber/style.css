@@ -241,10 +241,26 @@ main {
 
 .comidas-bebidas ul li {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     margin: 15px;
-    border-bottom: 1px solid orange;
 }
+
+.comidas-bebidas ul li img {
+    width: 32px; 
+    height: 48px;
+}
+
+.petisco, .bebida {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid orange;
+    height: 40px;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
 
 @media (max-width: 636px) {
     #nav-bar {
